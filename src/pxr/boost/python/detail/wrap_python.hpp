@@ -1,4 +1,3 @@
-//
 // Copyright 2024 Pixar
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
@@ -8,8 +7,10 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 //
-//  The author gratefully acknowleges the support of Dragon Systems, Inc., in
+//  The author gratefully acknowledges the support of Dragon Systems, Inc., in
 //  producing this work.
+//
+// Modified by Jeremy Retailleau.
 
 //  This file serves as a wrapper around <Python.h> which allows it to be
 //  compiled with GCC 2.95.2 under Win32 and which disables the default MSVC
@@ -177,11 +178,7 @@ typedef int pid_t;
 # pragma warning(disable : 5033)  // 'register' is no longer a supported storage class
 #endif
 
-#if PY_MAJOR_VERSION == 2 && PY_MINOR_VERSION == 2 && PY_MICRO_VERSION < 2
-# include "./python22_fixed.h"
-#else
 # include <Python.h>
-#endif
 
 #if PXR_BOOST_PYTHON_GCC_HAS_WREGISTER
 # pragma GCC diagnostic pop

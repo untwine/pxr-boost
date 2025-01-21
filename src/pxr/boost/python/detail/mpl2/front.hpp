@@ -1,8 +1,8 @@
-//
 // Copyright 2024 Pixar
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
 //
+// Modified by Jeremy Retailleau.
 
 #ifndef PXR_BOOST_PYTHON_DETAIL_MPL2_FRONT_HPP
 #define PXR_BOOST_PYTHON_DETAIL_MPL2_FRONT_HPP

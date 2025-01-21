@@ -1,4 +1,3 @@
-//
 // Copyright 2024 Pixar
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
@@ -8,8 +7,10 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 //
-//  The author gratefully acknowleges the support of Dragon Systems, Inc., in
+//  The author gratefully acknowledges the support of Dragon Systems, Inc., in
 //  producing this work.
+//
+// Modified by Jeremy Retailleau.
 
 #ifndef PXR_BOOST_PYTHON_DETAIL_NONE_HPP
 #define PXR_BOOST_PYTHON_DETAIL_NONE_HPP
