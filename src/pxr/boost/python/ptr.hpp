@@ -1,4 +1,3 @@
-//
 // Copyright 2024 Pixar
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
@@ -11,6 +10,8 @@
 // Based on boost/ref.hpp, thus:
 //  Copyright (C) 1999, 2000 Jaakko Jarvi (jaakko.jarvi@cs.utu.fi)
 //  Copyright (C) 2001 Peter Dimov
+//
+// Modified by Jeremy Retailleau.
 
 #ifndef PXR_BOOST_PYTHON_PTR_HPP
 #define PXR_BOOST_PYTHON_PTR_HPP

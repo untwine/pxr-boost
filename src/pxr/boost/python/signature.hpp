@@ -9,6 +9,7 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 //
+// Modified by Jeremy Retailleau.
 ///////////////////////////////////////////////////////////////////////////////
 
 #ifndef PXR_BOOST_PYTHON_SIGNATURE_HPP
