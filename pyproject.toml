@@ -1,0 +1,15 @@
+[build-system]
+requires = ["scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+cmake.args = [
+    "-DBUILD_TESTS=OFF",
+    "-DBUILD_DOCS=OFF",
+    "-DBUILD_SHARED_LIBS=ON"
+]
+
+[project]
+name = "pxr-boost"
+version = "25.02"
+description = "Boost.Python fork optimized for OpenUSD"

@@ -26,6 +26,15 @@ if (NOT BUILD_SHARED_LIBS)
     add_compile_definitions(PXR_STATIC)
 endif()
 
+if (SKBUILD)
+    set(CMAKE_INSTALL_LIBDIR "pxr-boost/lib")
+    set(CMAKE_INSTALL_INCLUDEDIR "pxr-boost/include")
+    set(CMAKE_INSTALL_SHAREDIR "pxr-boost/cmake")
+else()
+    include(GNUInstallDirs)
+    set(CMAKE_INSTALL_SHAREDIR "share/cmake/pxr-boost")
+endif()
+
 if (WIN32)
     # Prevent WinDef.h from defining min/max macros.
     add_definitions(-DNOMINMAX)
@@ -67,11 +76,11 @@ include(CMakePackageConfigHelpers)
 configure_package_config_file(
     "cmake/pxr-boost-config.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/pxr-boost-config.cmake"
-    INSTALL_DESTINATION share/cmake/pxr-boost
+    INSTALL_DESTINATION ${CMAKE_INSTALL_SHAREDIR}
 )
 
 install(
     FILES
         "${CMAKE_CURRENT_BINARY_DIR}/pxr-boost-config.cmake"
-    DESTINATION share/cmake/pxr-boost
+    DESTINATION ${CMAKE_INSTALL_SHAREDIR}
 )
