@@ -1,0 +1,14 @@
+// Copyright 2024 Pixar
+// Licensed under the terms set forth in the LICENSE.txt file available at
+// https://openusd.org/license.
+//
+// Modified by Jeremy Retailleau.
+
+#ifndef PXR_BOOST_PYTHON_COMMON_HPP
+#define PXR_BOOST_PYTHON_COMMON_HPP
+
+#define BOOST_INTERNAL_NS pxrInternal_v@PROJECT_VERSION_MAJOR@_@PROJECT_VERSION_MINOR@_@PROJECT_VERSION_PATCH@__pxrReserved__
+
+#define PXR_BOOST_NAMESPACE BOOST_INTERNAL_NS::pxr_boost
+
+#endif
