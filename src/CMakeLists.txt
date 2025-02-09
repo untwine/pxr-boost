@@ -362,5 +362,5 @@ install(
 install(EXPORT ${PROJECT_NAME}
     FILE pxr-boost-targets.cmake
     NAMESPACE pxr::
-    DESTINATION share/cmake/pxr-boost
+    DESTINATION ${CMAKE_INSTALL_SHAREDIR}
 )
