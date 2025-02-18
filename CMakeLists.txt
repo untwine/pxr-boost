@@ -1,30 +1,83 @@
-set(PXR_PREFIX pxr/external)
-set(PXR_PACKAGE boost)
+cmake_minimum_required(VERSION 3.23...4.1)
 
-# This subdirectory currently only contains Python-related
-# libraries, so skip it entirely if Python support is disabled.
-if (NOT PXR_ENABLE_PYTHON_SUPPORT AND NOT TARGET python_modules)
-    return()
+# Default build type value.
+set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the build type")
+
+project(pxr-boost
+    VERSION 0.25.8
+    HOMEPAGE_URL "https://github.com/untwine/pxr-boost"
+    LANGUAGES C CXX
+)
+
+if (NOT "${CMAKE_CXX_STANDARD}")
+    set(CMAKE_CXX_STANDARD 17 CACHE STRING "Default C++ standard")
 endif()
 
-pxr_library(boost
-    PUBLIC_HEADERS
-        python.hpp
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-    CPPFILES
-        # Workaround lack of build support for header-only libs.
-        build-workaround.cpp
+# Default options.
+option(BUILD_SHARED_LIBS "Build Shared Library" ON)
+option(BUILD_TESTS "Build tests" OFF)
+option(ENABLE_PRECOMPILED_HEADERS "Enable precompiled headers." OFF)
 
-    DISABLE_PRECOMPILED_HEADERS
+if (NOT BUILD_SHARED_LIBS)
+    add_compile_definitions(PXR_STATIC)
+endif()
+
+include(GNUInstallDirs)
+
+if (WIN32)
+    # Prevent WinDef.h from defining min/max macros.
+    add_definitions(-DNOMINMAX)
+
+    # Exclude unnecessary Windows APIs for faster builds and fewer macro conflicts.
+    add_definitions(-DWIN32_LEAN_AND_MEAN)
+
+    # Disable /Zc:inline in VS 2019+ to retain "arch_ctor_<name>" symbols in release.
+    # https://developercommunity.visualstudio.com/t/914943
+    if (MSVC_VERSION GREATER_EQUAL 1920)
+        set(CMAKE_CXX_FLAGS "/Zc:inline- ${CMAKE_CXX_FLAGS}")
+    else()
+        set(CMAKE_CXX_FLAGS "/Zc:inline ${CMAKE_CXX_FLAGS}")
+    endif()
+
+    # Disable harmless Visual Studio warning C4003 (non-standard preprocessor).
+    # https://developercommunity.visualstudio.com/t/364698
+    set(CMAKE_CXX_FLAGS "/wd4003 ${CMAKE_CXX_FLAGS}")
+endif()
+
+if(DEFINED ENV{CIBUILDWHEEL})
+    find_package(Python REQUIRED COMPONENTS Interpreter Development.Module)
+    add_library(Python::Python ALIAS Python::Module)
+else()
+    find_package(Python REQUIRED COMPONENTS Interpreter Development)
+endif()
+
+add_subdirectory(src)
+
+# Build and setup tests if required.
+if (BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(test)
+endif()
+
+include(CMakePackageConfigHelpers)
+
+configure_package_config_file(
+    "cmake/pxr-boost-config.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/pxr-boost-config.cmake"
+    INSTALL_DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/cmake/pxr-boost
 )
 
-# Ensure symbol in build-workaround.cpp is exported on Windows,
-# otherwise the build will error out at link time because no
-# .lib file will be generated. Using this setting is OK because
-# we only expect there to be one exportable symbol in this library.
-set_target_properties(boost 
-    PROPERTIES 
-        WINDOWS_EXPORT_ALL_SYMBOLS TRUE
+write_basic_package_version_file(
+    "pxr-boost-config-version.cmake"
+    COMPATIBILITY AnyNewerVersion
 )
 
-add_subdirectory(python)
+install(
+    FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/pxr-boost-config.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/pxr-boost-config-version.cmake"
+    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/cmake/pxr-boost
+)
