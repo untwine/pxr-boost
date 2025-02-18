@@ -1,0 +1,54 @@
+name: test-macos
+
+on:
+  push:
+    branches: [ dev, main ]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CTEST_OUTPUT_ON_FAILURE: True
+
+jobs:
+  test-macos:
+    name: test-${{ matrix.os }}
+    runs-on: ${{ matrix.runs-on }}
+    strategy:
+      matrix:
+        os: [ macos-intel, macos-arm ]
+        include:
+          - os: macos-intel
+            runs-on: macos-15-intel
+          - os: macos-arm
+            runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: 3.12
+
+      - name: Install Ninja
+        run: brew install ninja
+
+      - name: Set up Conan
+        shell: bash
+        run: |
+          pipx install conan
+          conan profile detect
+
+      - name: Build
+        shell: bash
+        run: >
+          conan build .
+          -o build_tests=True
+          --options=*:shared=True
+          -c tools.cmake.cmaketoolchain:generator=Ninja
+          --build=missing
+
+      - name: Test
+        run: ctest --preset conan-release -VV
