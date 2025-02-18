@@ -21,9 +21,6 @@
 #ifndef PXR_BOOST_PYTHON_NO_PY_SIGNATURES
 # include "./pytype_function.hpp"
 #endif
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-#include <boost/shared_ptr.hpp>
-#endif
 #include <memory>
 
 namespace pxr { namespace boost { namespace python { namespace converter {
