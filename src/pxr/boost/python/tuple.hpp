@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_TUPLE_HPP
 #define PXR_BOOST_PYTHON_TUPLE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/tuple.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 #include "./object.hpp"
@@ -92,6 +88,5 @@ make_tuple(A const&... a)
 
 }}}  // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif
 

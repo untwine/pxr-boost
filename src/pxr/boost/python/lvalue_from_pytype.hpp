@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_LVALUE_FROM_PYTYPE_HPP
 # define PXR_BOOST_PYTHON_LVALUE_FROM_PYTYPE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/lvalue_from_pytype.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 #ifndef PXR_BOOST_PYTHON_NO_PY_SIGNATURES
 # include "./converter/pytype_function.hpp"
@@ -125,5 +121,4 @@ struct lvalue_from_pytype
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_LVALUE_FROM_PYTYPE_HPP

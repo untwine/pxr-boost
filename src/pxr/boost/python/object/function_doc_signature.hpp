@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_FUNCTION_DOC_SIGNATURE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_FUNCTION_DOC_SIGNATURE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/function_doc_signature.hpp>
-#else
-
 #include "./function.hpp"
 #include "../converter/registrations.hpp"
 #include "../str.hpp"
@@ -44,5 +40,4 @@ public:
 
 }}}}//end of namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif //PXR_BOOST_PYTHON_OBJECT_FUNCTION_DOC_SIGNATURE_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_EXCEPTION_TRANSLATOR_HPP
 # define PXR_BOOST_PYTHON_EXCEPTION_TRANSLATOR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/exception_translator.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./type.hpp"
@@ -40,5 +36,4 @@ void register_exception_translator(Translate translate, type<ExceptionType>* = 0
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_EXCEPTION_TRANSLATOR_HPP

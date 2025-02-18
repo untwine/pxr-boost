@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_MANAGE_NEW_OBJECT_HPP
 # define PXR_BOOST_PYTHON_MANAGE_NEW_OBJECT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/manage_new_object.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/indirect_traits.hpp"
 # include "./detail/type_traits.hpp"
@@ -49,5 +45,4 @@ struct manage_new_object
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_MANAGE_NEW_OBJECT_HPP

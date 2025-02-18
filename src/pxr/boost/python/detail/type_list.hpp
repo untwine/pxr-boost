@@ -12,11 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_TYPE_LIST_HPP
 # define PXR_BOOST_PYTHON_DETAIL_TYPE_LIST_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/type_list.hpp>
-#else
-
 #  include "./type_list_impl.hpp"
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_TYPE_LIST_HPP

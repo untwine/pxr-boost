@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CLASS_FWD_HPP
 # define PXR_BOOST_PYTHON_CLASS_FWD_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/class_fwd.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/not_specified.hpp"
 
@@ -32,5 +28,4 @@ class class_;
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CLASS_FWD_HPP

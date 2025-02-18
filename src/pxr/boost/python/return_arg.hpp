@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_RETURN_ARG_HPP
 # define PXR_BOOST_PYTHON_RETURN_ARG_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/return_arg.hpp>
-#else
 # include "./default_call_policies.hpp"
 # include "./detail/none.hpp"
 # include "./detail/value_arg.hpp"
@@ -116,5 +113,4 @@ struct return_self
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_RETURN_ARG_HPP

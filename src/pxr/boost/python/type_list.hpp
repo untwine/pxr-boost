@@ -7,19 +7,6 @@
 #ifndef PXR_BOOST_PYTHON_TYPE_LIST_HPP
 #define PXR_BOOST_PYTHON_TYPE_LIST_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-
-#include <boost/mpl/vector.hpp>
-
-namespace pxr { namespace boost { namespace python {
-
-template <class ...T>
-using type_list = ::boost::mpl::vector<T...>;
-
-}}} // namespace pxr::boost::python
-
-#else
-
 #include "./detail/type_list.hpp"
 
 namespace pxr { namespace boost { namespace python {
@@ -28,7 +15,5 @@ template <class ...T>
 using type_list = detail::type_list<T...>;
 
 }}} // namespace pxr::boost::python
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 
 #endif // PXR_BOOST_PYTHON_TYPE_LIST_HPP

@@ -15,10 +15,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_DEFAULTS_GEN_HPP
 #define PXR_BOOST_PYTHON_DETAIL_DEFAULTS_GEN_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/defaults_gen.hpp>
-#else
-
 #include "./preprocessor.hpp"
 #include "./mpl2/at.hpp"
 #include "./mpl2/size.hpp"
@@ -279,7 +275,7 @@ struct fstubs_name                                                      \
 #define PXR_BOOST_PYTHON_MEM_FUN_GENERATOR PXR_BOOST_PYTHON_MEMBER_FUNCTION_OVERLOADS
 
 ///////////////////////////////////////////////////////////////////////////////
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
+
 #endif // PXR_BOOST_PYTHON_DETAIL_DEFAULTS_GEN_HPP
 
 

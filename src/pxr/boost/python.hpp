@@ -14,15 +14,6 @@
 #ifndef PXR_BOOST_PYTHON_HPP
 # define PXR_BOOST_PYTHON_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python.hpp>
-
-#include "./python/noncopyable.hpp"
-#include "./python/ref.hpp"
-#include "./python/type.hpp"
-#include "./python/type_list.hpp"
-#else
-
 # include "./python/args.hpp"
 # include "./python/args_fwd.hpp"
 # include "./python/back_reference.hpp"
@@ -91,5 +82,4 @@
 # include "./python/type_list.hpp"
 # include "./python/with_custodian_and_ward.hpp"
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_HPP

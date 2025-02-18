@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_MAKE_INSTANCE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_MAKE_INSTANCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/make_instance.hpp>
-#else
-
 # include "../ref.hpp"
 # include "../detail/prefix.hpp"
 # include "./instance.hpp"
@@ -93,5 +89,4 @@ struct make_instance
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_MAKE_INSTANCE_HPP

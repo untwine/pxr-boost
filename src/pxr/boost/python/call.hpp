@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_CALL_HPP
 #  define PXR_BOOST_PYTHON_CALL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/call.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 #  include "./converter/arg_to_python.hpp"
@@ -49,5 +45,4 @@ call(PyObject* callable, A const&... a)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_CALL_HPP

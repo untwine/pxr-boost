@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_REGISTERED_POINTEE_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_REGISTERED_POINTEE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/registered_pointee.hpp>
-#else
 # include "./registered.hpp"
 # include "./pointer_type_id.hpp"
 # include "./registry.hpp"
@@ -37,5 +34,4 @@ struct registered_pointee
 };
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_REGISTERED_POINTEE_HPP

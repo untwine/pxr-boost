@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DEF_HPP
 # define PXR_BOOST_PYTHON_DEF_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/def.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./object_fwd.hpp"
@@ -122,5 +118,4 @@ void def(char const* name, F f, A1 const& a1, A2 const& a2, A3 const& a3)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DEF_HPP

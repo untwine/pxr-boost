@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_TYPE_TRAITS_HPP
 # define PXR_BOOST_PYTHON_DETAIL_TYPE_TRAITS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/type_traits.hpp>
-#else
-
 # include <type_traits>
 
 namespace pxr { namespace boost { namespace python { namespace detail {
@@ -96,6 +92,4 @@ namespace pxr { namespace boost { namespace python { namespace detail {
 
 }}}} // namespace pxr::boost::python::detail
 
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif //BOOST_DETAIL_TYPE_TRAITS_HPP

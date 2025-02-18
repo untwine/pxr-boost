@@ -12,18 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_TYPE_HPP
 # define PXR_BOOST_PYTHON_TYPE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-
-#include <boost/type.hpp>
-
-namespace pxr { namespace boost { namespace python {
-
-using boost::type;
-
-}}}
-
-#else
-
 namespace pxr { namespace boost { namespace python {
 
   // Just a simple "type envelope". Useful in various contexts, mostly to work
@@ -33,5 +21,4 @@ namespace pxr { namespace boost { namespace python {
 
 }}}
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_TYPE_HPP

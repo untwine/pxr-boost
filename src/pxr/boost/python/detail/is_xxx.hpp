@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_IS_XXX_HPP
 # define PXR_BOOST_PYTHON_DETAIL_IS_XXX_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/is_xxx.hpp>
-#else
-
 # include <type_traits>
 
 #  define PXR_BOOST_PYTHON_IS_XXX_DEF(name, qualified_name, nargs) \
@@ -28,5 +24,4 @@ struct is_##name<qualified_name<T...>>                             \
 {                                                                  \
 };
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_IS_XXX_HPP

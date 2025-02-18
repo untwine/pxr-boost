@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_REGISTRY_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_REGISTRY_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/registry.hpp>
-#else
 # include "../type_id.hpp"
 # include "./to_python_function_type.hpp"
 # include "./rvalue_from_python_data.hpp"
@@ -63,5 +60,4 @@ namespace registry
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_REGISTRY_HPP

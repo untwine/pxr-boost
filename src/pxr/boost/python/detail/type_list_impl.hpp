@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_DETAIL_TYPE_LIST_IMPL_HPP
 #  define PXR_BOOST_PYTHON_DETAIL_TYPE_LIST_IMPL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/type_list_impl.hpp>
-#else
-
 #  include "./type_list.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace detail {
@@ -28,5 +24,4 @@ struct type_list
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_DETAIL_TYPE_LIST_IMPL_HPP

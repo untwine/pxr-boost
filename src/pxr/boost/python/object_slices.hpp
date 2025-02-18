@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_SLICES_HPP
 # define PXR_BOOST_PYTHON_OBJECT_SLICES_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object_slices.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./proxy.hpp"
@@ -154,5 +150,4 @@ inline void slice_policies::del(
 
 }}}} // namespace pxr::boost::python::api
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_SLICES_HPP

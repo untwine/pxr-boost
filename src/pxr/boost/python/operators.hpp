@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OPERATORS_HPP
 # define PXR_BOOST_PYTHON_OPERATORS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/operators.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./def_visitor.hpp"
@@ -354,5 +350,4 @@ PXR_BOOST_PYTHON_UNARY_OPERATOR(repr, convert_to_string, repr)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OPERATORS_HPP

@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_OBJECT_VALUE_HOLDER_HPP
 #  define PXR_BOOST_PYTHON_OBJECT_VALUE_HOLDER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/value_holder.hpp>
-#else
-
 #  include "./value_holder_fwd.hpp"
 
 #  include "../instance_holder.hpp"
@@ -113,5 +109,4 @@ void* value_holder_back_reference<Value,Held>::holds(
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_OBJECT_VALUE_HOLDER_HPP

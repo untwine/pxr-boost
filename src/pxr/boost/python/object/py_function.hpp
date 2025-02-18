@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_PY_FUNCTION_HPP
 # define PXR_BOOST_PYTHON_OBJECT_PY_FUNCTION_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/py_function.hpp>
-#else
-
 # include "../detail/signature.hpp"
 # include "../detail/mpl2/size.hpp"
 # include <memory>
@@ -179,5 +175,4 @@ struct py_function
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_PY_FUNCTION_HPP

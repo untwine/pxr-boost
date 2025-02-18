@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_AS_TO_PYTHON_FUNCTION_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_AS_TO_PYTHON_FUNCTION_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/as_to_python_function.hpp>
-#else
 # include "./to_python_function_type.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace converter {
@@ -57,5 +54,4 @@ struct as_to_python_function
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_AS_TO_PYTHON_FUNCTION_HPP

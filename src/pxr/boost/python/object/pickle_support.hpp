@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_PICKLE_SUPPORT_HPP
 # define PXR_BOOST_PYTHON_OBJECT_PICKLE_SUPPORT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/pickle_support.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 
 namespace pxr { namespace boost { namespace python {
@@ -132,5 +128,4 @@ namespace detail {
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_PICKLE_SUPPORT_HPP

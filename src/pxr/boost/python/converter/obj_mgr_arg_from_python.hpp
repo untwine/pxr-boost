@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_OBJ_MGR_ARG_FROM_PYTHON_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_OBJ_MGR_ARG_FROM_PYTHON_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/obj_mgr_arg_from_python.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 # include "../detail/referent_storage.hpp"
 # include "../detail/destroy.hpp"
@@ -136,5 +132,4 @@ inline Ref object_manager_ref_arg_from_python<Ref>::operator()() const
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_OBJ_MGR_ARG_FROM_PYTHON_HPP

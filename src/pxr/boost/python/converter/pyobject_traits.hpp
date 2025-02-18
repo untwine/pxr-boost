@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_PYOBJECT_TRAITS_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_PYOBJECT_TRAITS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/pyobject_traits.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 # include "./pyobject_type.hpp"
 
@@ -54,5 +50,4 @@ PXR_BOOST_PYTHON_BUILTIN_OBJECT_TRAITS(Tuple);
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_PYOBJECT_TRAITS_HPP

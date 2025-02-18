@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_INSTANCE_HOLDER_HPP
 # define PXR_BOOST_PYTHON_INSTANCE_HOLDER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/instance_holder.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./type_id.hpp"
 # include <cstddef>
@@ -72,5 +68,4 @@ inline instance_holder* instance_holder::next() const
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_INSTANCE_HOLDER_HPP

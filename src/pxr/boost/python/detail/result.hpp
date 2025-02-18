@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_DETAIL_RESULT_HPP
 #  define PXR_BOOST_PYTHON_DETAIL_RESULT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/result.hpp>
-#else
-
 #  include "../type.hpp"
 
 #  include "./preprocessor.hpp"
@@ -57,5 +53,4 @@ result(X const&, short = 0) { return 0; }
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_DETAIL_RESULT_HPP

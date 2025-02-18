@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_ARG_FROM_PYTHON_HPP
 # define PXR_BOOST_PYTHON_ARG_FROM_PYTHON_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/arg_from_python.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./converter/arg_from_python.hpp"
 
@@ -70,5 +66,4 @@ inline arg_from_python<T>::arg_from_python(PyObject* source)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_ARG_FROM_PYTHON_HPP

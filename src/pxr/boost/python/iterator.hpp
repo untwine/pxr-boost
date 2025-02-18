@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_ITERATOR_HPP
 # define PXR_BOOST_PYTHON_ITERATOR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/iterator.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./detail/target.hpp"
@@ -143,5 +139,4 @@ struct iterator : object
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_ITERATOR_HPP

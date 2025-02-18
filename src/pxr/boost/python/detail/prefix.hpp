@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_PREFIX_HPP
 # define PXR_BOOST_PYTHON_DETAIL_PREFIX_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/prefix.hpp>
-#else
-
 // The rule is that <Python.h> must be included before any system
 // headers (so it can get control over some awful macros).
 // Unfortunately, Boost.Python needs to #include <limits.h> first, at
@@ -24,5 +20,4 @@
 # include "./wrap_python.hpp"
 # include "./config.hpp"
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_PREFIX_HPP

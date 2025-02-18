@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_FORCE_INSTANTIATE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_FORCE_INSTANTIATE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/force_instantiate.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
 // Allows us to force the argument to be instantiated without
@@ -26,5 +22,4 @@ inline void force_instantiate(T const&) {}
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_FORCE_INSTANTIATE_HPP

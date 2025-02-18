@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DOCSTRING_OPTIONS_HPP
 # define PXR_BOOST_PYTHON_DOCSTRING_OPTIONS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/docstring_options.hpp>
-#else
-
 #include "./object/function.hpp"
 
 namespace pxr { namespace boost { namespace python {
@@ -138,5 +134,4 @@ class PXR_BOOST_PYTHON_DECL docstring_options
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DOCSTRING_OPTIONS_HPP

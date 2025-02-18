@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_FROM_PYTHON_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_FROM_PYTHON_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/from_python.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 # include "./rvalue_from_python_data.hpp"
 
@@ -49,5 +45,4 @@ PXR_BOOST_PYTHON_DECL void throw_no_reference_from_python(PyObject*, registratio
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_FROM_PYTHON_HPP

@@ -13,10 +13,6 @@
 #ifndef PXR_BOOST_PYTHON_TO_PYTHON_VALUE_HPP
 #define PXR_BOOST_PYTHON_TO_PYTHON_VALUE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/to_python_value.hpp>
-#else
-
 #include "./detail/prefix.hpp"
 
 #include "./refcount.hpp"
@@ -124,12 +120,6 @@ struct object_manager_get_pytype<true>
       static constexpr bool uses_registry = false;
   private:
 #ifndef PXR_BOOST_PYTHON_NO_PY_SIGNATURES
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-    template <class U>
-    PyTypeObject const* get_pytype(type<boost::shared_ptr<U> &> *) const {return converter::registered<U>::converters.to_python_target_type();}
-    template <class U>
-    PyTypeObject const* get_pytype(type<const boost::shared_ptr<U> &> *) const {return converter::registered<U>::converters.to_python_target_type();}
-#endif
     template <class U>
     PyTypeObject const* get_pytype(type<std::shared_ptr<U> &> *) const {return converter::registered<U>::converters.to_python_target_type();}
     template <class U>
@@ -184,5 +174,4 @@ namespace detail
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif

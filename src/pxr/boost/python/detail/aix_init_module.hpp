@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_AIX_INIT_MODULE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_AIX_INIT_MODULE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/aix_init_module.hpp>
-#else
 # ifdef _AIX
 # include "./prefix.hpp"
 # include <cstdio>
@@ -34,5 +31,4 @@ void aix_init_module(so_load_function, char const* name, void (*init_module)());
 }}}} // namespace pxr::boost::python::detail
 # endif
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_AIX_INIT_MODULE_HPP

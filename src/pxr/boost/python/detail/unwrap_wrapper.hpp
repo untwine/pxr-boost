@@ -11,10 +11,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_UNWRAP_WRAPPER_HPP
 # define PXR_BOOST_PYTHON_DETAIL_UNWRAP_WRAPPER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/unwrap_wrapper.hpp>
-#else
-
 # include "./prefix.hpp"
 # include "./is_wrapper.hpp"
 # include "./mpl2/eval_if.hpp"
@@ -42,5 +38,4 @@ unwrap_wrapper(T*)
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_UNWRAP_WRAPPER_HPP

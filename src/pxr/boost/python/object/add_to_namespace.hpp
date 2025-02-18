@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_ADD_TO_NAMESPACE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_ADD_TO_NAMESPACE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/add_to_namespace.hpp>
-#else
-
 # include "../object_fwd.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace objects {
@@ -31,5 +27,4 @@ PXR_BOOST_PYTHON_DECL void add_to_namespace(
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_ADD_TO_NAMESPACE_HPP

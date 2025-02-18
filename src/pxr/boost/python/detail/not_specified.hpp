@@ -12,15 +12,10 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_NOT_SPECIFIED_HPP
 # define PXR_BOOST_PYTHON_DETAIL_NOT_SPECIFIED_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/not_specified.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
   struct not_specified {};
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_NOT_SPECIFIED_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_ATTRIBUTES_HPP
 # define PXR_BOOST_PYTHON_OBJECT_ATTRIBUTES_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object_attributes.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./proxy.hpp"
@@ -124,5 +120,4 @@ inline void objattribute_policies::del(
 
 }}}} // namespace pxr::boost::python::api
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_ATTRIBUTES_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_CONSTRUCT_HPP
 # define PXR_BOOST_PYTHON_DETAIL_CONSTRUCT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/construct.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
 template <class T, class Arg>
@@ -44,5 +40,4 @@ void construct_referent(void* storage, Arg& x, T(*tag)() = 0)
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_CONSTRUCT_HPP

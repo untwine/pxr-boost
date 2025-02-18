@@ -15,10 +15,6 @@
 #ifndef PXR_BOOST_PYTHON_ERRORS_HPP
 # define PXR_BOOST_PYTHON_ERRORS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/errors.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 #include <functional>
 
@@ -62,5 +58,4 @@ PXR_BOOST_PYTHON_DECL PyObject* pytype_check(PyTypeObject* pytype, PyObject* sou
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_ERRORS_HPP

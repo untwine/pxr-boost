@@ -15,10 +15,6 @@
 # ifndef PXR_BOOST_PYTHON_RETURN_OPAQUE_POINTER_HPP
 # define PXR_BOOST_PYTHON_RETURN_OPAQUE_POINTER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/return_opaque_pointer.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./opaque_pointer_converter.hpp"
 # include "./detail/force_instantiate.hpp"
@@ -55,5 +51,5 @@ struct return_opaque_pointer
 };
 
 }}} // namespace pxr::boost::python
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
+
 # endif // PXR_BOOST_PYTHON_RETURN_OPAQUE_POINTER_HPP

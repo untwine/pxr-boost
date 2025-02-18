@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_DETAIL_CALLER_HPP
 #  define PXR_BOOST_PYTHON_DETAIL_CALLER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/caller.hpp>
-#else
-
 #  include "../type_id.hpp"
 #  include "../handle.hpp"
 
@@ -288,5 +284,4 @@ struct caller_arity<std::index_sequence<N...>>
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_DETAIL_CALLER_HPP

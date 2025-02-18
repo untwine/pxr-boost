@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_INHERITANCE_QUERY_HPP
 # define PXR_BOOST_PYTHON_OBJECT_INHERITANCE_QUERY_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/inheritance_query.hpp>
-#else
-
 # include "../type_id.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace objects {
@@ -25,5 +21,4 @@ PXR_BOOST_PYTHON_DECL void* find_dynamic_type(void* p, type_info src, type_info 
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_INHERITANCE_QUERY_HPP

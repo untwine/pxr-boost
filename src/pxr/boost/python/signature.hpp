@@ -15,10 +15,6 @@
 # ifndef PXR_BOOST_PYTHON_SIGNATURE_HPP
 #  define PXR_BOOST_PYTHON_SIGNATURE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/signature.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./detail/mpl2/if.hpp"
@@ -149,6 +145,4 @@ PXR_BOOST_PYTHON_APPLY_QUALIFIERS(PXR_BOOST_PYTHON_GET_SIGNATURE_MEMBERS);
 
 }}}} // namespace pxr::boost::python::detail
 
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_SIGNATURE_HPP

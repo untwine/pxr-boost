@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_CONSTRUCTOR_FUNCTION_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_CONSTRUCTOR_FUNCTION_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/constructor_function.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace converter {
 
 // Declares the type of functions used to construct C++ objects for
@@ -25,5 +21,4 @@ typedef void (*constructor_function)(PyObject* source, rvalue_from_python_stage1
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_CONSTRUCTOR_FUNCTION_HPP

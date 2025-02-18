@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_CLASS_WRAPPER_HPP
 # define PXR_BOOST_PYTHON_OBJECT_CLASS_WRAPPER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/class_wrapper.hpp>
-#else
-
 # include "../to_python_converter.hpp"
 # include "../ref.hpp"
 #ifndef PXR_BOOST_PYTHON_NO_PY_SIGNATURES
@@ -68,5 +64,4 @@ struct class_value_wrapper
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_CLASS_WRAPPER_HPP

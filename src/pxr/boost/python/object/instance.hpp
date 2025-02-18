@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_INSTANCE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_INSTANCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/instance.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 # include "../detail/type_traits.hpp"
 # include <cstddef>
@@ -55,5 +51,4 @@ struct additional_instance_size
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_INSTANCE_HPP

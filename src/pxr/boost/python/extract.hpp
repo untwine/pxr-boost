@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_EXTRACT_HPP
 # define PXR_BOOST_PYTHON_EXTRACT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/extract.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./converter/object_manager.hpp"
@@ -264,5 +260,4 @@ namespace converter
   
 }}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_EXTRACT_HPP

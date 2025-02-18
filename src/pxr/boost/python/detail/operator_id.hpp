@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_OPERATOR_ID_HPP
 # define PXR_BOOST_PYTHON_DETAIL_OPERATOR_ID_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/operator_id.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
 enum operator_id
@@ -71,5 +67,4 @@ enum operator_id
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_OPERATOR_ID_HPP

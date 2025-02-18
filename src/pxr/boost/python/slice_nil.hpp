@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_SLICE_NIL_HPP
 # define PXR_BOOST_PYTHON_SLICE_NIL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/slice_nil.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./object_core.hpp"
 
@@ -52,5 +48,4 @@ using api::_;
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_SLICE_NIL_HPP

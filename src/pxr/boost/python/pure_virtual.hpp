@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_PURE_VIRTUAL_HPP
 # define PXR_BOOST_PYTHON_PURE_VIRTUAL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/pure_virtual.hpp>
-#else
-
 # include "./def_visitor.hpp"
 # include "./default_call_policies.hpp"
 # include "./detail/mpl2/push_front.hpp"
@@ -132,5 +128,4 @@ pure_virtual(PointerToMemberFunction pmf)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_PURE_VIRTUAL_HPP

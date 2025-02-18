@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_TAG_HPP
 # define PXR_BOOST_PYTHON_TAG_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/tag.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 namespace pxr { namespace boost { namespace python {
@@ -26,5 +22,4 @@ enum tag_t { tag };
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_TAG_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_RETURN_BY_VALUE_HPP
 # define PXR_BOOST_PYTHON_RETURN_BY_VALUE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/return_by_value.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./to_python_value.hpp"
@@ -38,5 +34,4 @@ struct return_by_value
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_RETURN_BY_VALUE_HPP

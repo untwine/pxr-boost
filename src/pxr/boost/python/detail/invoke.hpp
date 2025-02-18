@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_DETAIL_INVOKE_HPP
 #  define PXR_BOOST_PYTHON_DETAIL_INVOKE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/invoke.hpp>
-#else
-
 #  include "./prefix.hpp"
 #  include "./preprocessor.hpp"
 #  include "./none.hpp"
@@ -87,5 +83,4 @@ inline PyObject* invoke(invoke_tag_<true,true>, RC const&, F& f, TC& tc, AC&... 
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_DETAIL_INVOKE_HPP

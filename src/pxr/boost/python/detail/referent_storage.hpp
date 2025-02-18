@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_REFERENT_STORAGE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_REFERENT_STORAGE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/referent_storage.hpp>
-#else
 # include "./type_traits.hpp"
 # include "./mpl2/if.hpp"
 # include <cstddef>
@@ -57,5 +54,4 @@ struct referent_storage
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_REFERENT_STORAGE_HPP

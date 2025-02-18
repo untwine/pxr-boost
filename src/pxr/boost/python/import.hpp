@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_IMPORT_HPP
 # define PXR_BOOST_PYTHON_IMPORT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/import.hpp>
-#else
-
 # include "./object.hpp"
 # include "./str.hpp"
 
@@ -33,5 +29,4 @@ object PXR_BOOST_PYTHON_DECL import(str name);
 }
 }
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif

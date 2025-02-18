@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_RVALUE_FROM_PYTHON_DATA_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_RVALUE_FROM_PYTHON_DATA_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/rvalue_from_python_data.hpp>
-#else
-
 # include "./constructor_function.hpp"
 # include "../detail/referent_storage.hpp"
 # include "../detail/destroy.hpp"
@@ -158,5 +154,4 @@ inline rvalue_from_python_data<T>::~rvalue_from_python_data()
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_RVALUE_FROM_PYTHON_DATA_HPP

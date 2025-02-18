@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_REFERENCE_EXISTING_OBJECT_HPP
 # define PXR_BOOST_PYTHON_REFERENCE_EXISTING_OBJECT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/reference_existing_object.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/indirect_traits.hpp"
 # include "./detail/mpl2/if.hpp"
@@ -54,5 +50,4 @@ struct reference_existing_object
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_REFERENCE_EXISTING_OBJECT_HPP

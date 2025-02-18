@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_DEF_HELPER_FWD_HPP
 # define PXR_BOOST_PYTHON_DETAIL_DEF_HELPER_FWD_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/def_helper_fwd.hpp>
-#else
-
 # include "./not_specified.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace detail {
@@ -25,5 +21,4 @@ struct def_helper;
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_DEF_HELPER_FWD_HPP

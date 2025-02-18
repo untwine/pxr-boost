@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_OPERATORS_HPP
 # define PXR_BOOST_PYTHON_OBJECT_OPERATORS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object_operators.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./object_core.hpp"
@@ -146,5 +142,4 @@ PXR_BOOST_PYTHON_INPLACE_OPERATOR(|=)
 
 }}}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_OPERATORS_HPP

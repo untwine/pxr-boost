@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_TO_PYTHON_CONVERTER_HPP
 # define PXR_BOOST_PYTHON_TO_PYTHON_CONVERTER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/to_python_converter.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./converter/registry.hpp"
@@ -102,6 +98,5 @@ to_python_converter<T,Conversion, has_get_pytype>::to_python_converter()
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_TO_PYTHON_CONVERTER_HPP
 

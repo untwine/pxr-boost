@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_DETAIL_TARGET_HPP
 #  define PXR_BOOST_PYTHON_DETAIL_TARGET_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/target.hpp>
-#else
-
 #  include "./preprocessor.hpp"
 
 #  include "../type.hpp"
@@ -50,5 +46,4 @@ T& (* target(R (T::*)) )() { return 0; }
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_DETAIL_TARGET_HPP

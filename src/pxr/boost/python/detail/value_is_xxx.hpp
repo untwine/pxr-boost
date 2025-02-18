@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_VALUE_IS_XXX_HPP
 # define PXR_BOOST_PYTHON_DETAIL_VALUE_IS_XXX_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/value_is_xxx.hpp>
-#else
-
 # include "./mpl2/bool.hpp"
 
 # include "./type_traits.hpp"
@@ -39,5 +35,4 @@ struct value_is_##name                                                  \
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_VALUE_IS_XXX_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_FORWARD_HPP
 # define PXR_BOOST_PYTHON_OBJECT_FORWARD_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/forward.hpp>
-#else
-
 # include "../ref.hpp"
 # include "../detail/mpl2/if.hpp"
 # include "../detail/value_arg.hpp"
@@ -104,5 +100,4 @@ T const& do_unforward(T const& x, ...)
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_FORWARD_HPP

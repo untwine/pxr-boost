@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CAST_HPP
 # define PXR_BOOST_PYTHON_CAST_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/cast.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/type_traits.hpp"
 
@@ -113,5 +109,4 @@ inline Target* downcast(Source* x, Target* = 0)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CAST_HPP

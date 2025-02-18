@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_IF_ELSE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_IF_ELSE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/if_else.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
 template <class T> struct elif_selected;
@@ -88,5 +84,4 @@ struct if_<false>
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_IF_ELSE_HPP

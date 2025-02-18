@@ -13,10 +13,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_REGISTERED_HPP
 #define PXR_BOOST_PYTHON_CONVERTER_REGISTERED_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/registered.hpp>
-#else
-
 #include "../type_id.hpp"
 #include "./registry.hpp"
 #include "./registrations.hpp"
@@ -26,17 +22,6 @@
 #if defined(PXR_BOOST_PYTHON_TRACE_REGISTRY) \
  || defined(PXR_BOOST_PYTHON_CONVERTER_REGISTRY_APPLE_MACH_WORKAROUND)
 # include <iostream>
-#endif
-
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-namespace boost {
-
-// You'll see shared_ptr mentioned in this header because we need to
-// note which types are shared_ptrs in their registrations, to
-// implement special shared_ptr handling for rvalue conversions.
-template <class T> class shared_ptr;
-
-}
 #endif
 
 namespace pxr { namespace boost {
@@ -82,15 +67,6 @@ namespace detail
   {
   }
 
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-  template <class T>
-  inline void
-  register_shared_ptr0(boost::shared_ptr<T>*)
-  {
-      registry::lookup_shared_ptr(type_id<boost::shared_ptr<T> >());
-  }
-#endif
-
   template <class T>
   inline void
   register_shared_ptr0(std::shared_ptr<T>*)
@@ -134,5 +110,4 @@ namespace detail
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif

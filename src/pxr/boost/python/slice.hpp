@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_SLICE_HPP
 #define PXR_BOOST_PYTHON_SLICE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/slice.hpp>
-#else
-
 #include "./detail/prefix.hpp"
 #include "./object.hpp"
 #include "./extract.hpp"
@@ -285,6 +281,4 @@ struct object_manager_traits<slice>
 
 } } } // !namespace ::pxr::boost::python
 
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // !defined PXR_BOOST_PYTHON_SLICE_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_REGISTRATIONS_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_REGISTRATIONS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/registrations.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 
 # include "../type_id.hpp"
@@ -101,5 +97,4 @@ inline bool operator<(registration const& lhs, registration const& rhs)
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_REGISTRATIONS_HPP

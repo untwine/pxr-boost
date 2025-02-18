@@ -12,14 +12,9 @@
 #ifndef PXR_BOOST_PYTHON_MODULE_HPP
 # define PXR_BOOST_PYTHON_MODULE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/module.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./module_init.hpp"
 # define PXR_BOOST_PYTHON_MODULE PXR_BOOST_PYTHON_MODULE_INIT
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_MODULE_HPP

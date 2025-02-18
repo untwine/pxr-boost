@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_MAKE_FUNCTION_HPP
 # define PXR_BOOST_PYTHON_MAKE_FUNCTION_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/make_function.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./default_call_policies.hpp"
@@ -160,6 +156,4 @@ object make_function(
 
 }}}
 
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_MAKE_FUNCTION_HPP

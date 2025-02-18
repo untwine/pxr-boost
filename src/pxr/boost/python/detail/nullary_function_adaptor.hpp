@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_NULLARY_FUNCTION_ADAPTOR_HPP
 # define PXR_BOOST_PYTHON_DETAIL_NULLARY_FUNCTION_ADAPTOR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/nullary_function_adaptor.hpp>
-#else
-
 # include "./prefix.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace detail {
@@ -39,5 +35,4 @@ struct nullary_function_adaptor
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_NULLARY_FUNCTION_ADAPTOR_HPP

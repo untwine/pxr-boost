@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_REFCOUNT_HPP
 # define PXR_BOOST_PYTHON_REFCOUNT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/refcount.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./cast.hpp"
 
@@ -51,5 +47,4 @@ inline void xdecref(T* p)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_REFCOUNT_HPP

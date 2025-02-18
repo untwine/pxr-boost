@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_BACK_REFERENCE_HPP
 # define PXR_BOOST_PYTHON_BACK_REFERENCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/back_reference.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./object_fwd.hpp"
@@ -79,5 +75,4 @@ T back_reference<T>::get() const
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_BACK_REFERENCE_HPP

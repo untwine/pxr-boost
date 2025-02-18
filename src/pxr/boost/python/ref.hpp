@@ -7,22 +7,6 @@
 #ifndef PXR_BOOST_PYTHON_REF_HPP
 #define PXR_BOOST_PYTHON_REF_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-
-#include <boost/core/ref.hpp>
-
-namespace pxr { namespace boost { namespace python {
-
-using boost::ref;
-using boost::cref;
-using boost::reference_wrapper;
-using boost::is_reference_wrapper;
-using boost::unwrap_reference;
-
-}}} // namespace pxr::boost::python
-
-#else
-
 #include <functional>
 
 namespace pxr { namespace boost { namespace python {
@@ -55,5 +39,4 @@ struct unwrap_reference<std::reference_wrapper<U>>
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_REF_HPP

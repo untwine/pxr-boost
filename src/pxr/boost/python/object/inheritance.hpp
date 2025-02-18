@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_INHERITANCE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_INHERITANCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/inheritance.hpp>
-#else
-
 # include "../type_id.hpp"
 # include "../detail/mpl2/if.hpp"
 # include "../detail/type_traits.hpp"
@@ -137,5 +133,4 @@ inline void register_conversion(
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_INHERITANCE_HPP

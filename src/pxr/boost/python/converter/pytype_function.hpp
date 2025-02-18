@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_PYTYPE_FUNCTION_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_PYTYPE_FUNCTION_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/pytype_function.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 # include "./registered.hpp"
 #  include "../detail/unwind_type.hpp"
@@ -142,5 +138,4 @@ struct to_python_target_type_direct
 
 }}}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_PYTYPE_FUNCTION_HPP

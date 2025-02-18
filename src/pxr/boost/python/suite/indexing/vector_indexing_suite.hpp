@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_SUITE_INDEXING_VECTOR_INDEXING_SUITE_HPP
 # define PXR_BOOST_PYTHON_SUITE_INDEXING_VECTOR_INDEXING_SUITE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/suite/indexing/vector_indexing_suite.hpp>
-#else
-
 # include "./indexing_suite.hpp"
 # include "./container_utils.hpp"
 # include "../../iterator.hpp"
@@ -249,5 +245,4 @@ namespace pxr { namespace boost { namespace python {
        
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_SUITE_INDEXING_VECTOR_INDEXING_SUITE_HPP

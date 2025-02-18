@@ -13,10 +13,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_VALUE_IS_SHARED_PTR_HPP
 #define PXR_BOOST_PYTHON_DETAIL_VALUE_IS_SHARED_PTR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/value_is_shared_ptr.hpp>
-#else
-
 #include "./value_is_xxx.hpp"
 #include "./is_shared_ptr.hpp"
 
@@ -35,5 +31,4 @@ struct value_is_shared_ptr
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_VALUE_IS_SHARED_PTR_HPP

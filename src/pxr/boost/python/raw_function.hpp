@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_RAW_FUNCTION_HPP
 # define PXR_BOOST_PYTHON_RAW_FUNCTION_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/raw_function.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./type_list.hpp"
@@ -69,5 +65,4 @@ object raw_function(F f, std::size_t min_args = 0)
     
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_RAW_FUNCTION_HPP

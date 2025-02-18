@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_FUNCTION_OBJECT_HPP
 # define PXR_BOOST_PYTHON_OBJECT_FUNCTION_OBJECT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/function_object.hpp>
-#else
 # include "../detail/prefix.hpp"
 # include "../object_core.hpp"
 # include "../args_fwd.hpp"
@@ -47,5 +44,4 @@ namespace objects
 
 }}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_FUNCTION_OBJECT_HPP

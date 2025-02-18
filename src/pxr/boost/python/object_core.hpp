@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_CORE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_CORE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object_core.hpp>
-#else
-
 # define PXR_BOOST_PYTHON_OBJECT_HAS_IS_NONE // added 2010-03-15 by rwgk
 
 # include "./detail/prefix.hpp"
@@ -487,5 +483,4 @@ inline PyObject* get_managed_object(object const& x, tag_t)
 
 # include "./slice_nil.hpp"
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_CORE_HPP

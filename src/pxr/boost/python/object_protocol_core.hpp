@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_PROTOCOL_CORE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_PROTOCOL_CORE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object_protocol_core.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./handle_fwd.hpp"
@@ -61,5 +57,4 @@ using api::delslice;
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_PROTOCOL_CORE_HPP

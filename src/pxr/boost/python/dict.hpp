@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DICT_HPP
 #define PXR_BOOST_PYTHON_DICT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/dict.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 #include "./object.hpp"
@@ -159,6 +155,5 @@ namespace converter
 
 }}}   // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif
 

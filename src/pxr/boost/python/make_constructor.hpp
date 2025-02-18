@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_MAKE_CONSTRUCTOR_HPP
 # define PXR_BOOST_PYTHON_MAKE_CONSTRUCTOR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/make_constructor.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./default_call_policies.hpp"
@@ -286,6 +282,4 @@ object make_constructor(
 
 }}}
 
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_MAKE_CONSTRUCTOR_HPP

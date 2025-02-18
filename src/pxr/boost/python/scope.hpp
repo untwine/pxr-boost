@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_SCOPE_HPP
 # define PXR_BOOST_PYTHON_SCOPE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/scope.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./object.hpp"
 # include "./refcount.hpp"
@@ -85,5 +81,4 @@ inline scope::scope(scope const& new_scope)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_SCOPE_HPP

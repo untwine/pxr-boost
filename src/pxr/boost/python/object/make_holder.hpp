@@ -12,10 +12,6 @@
 # ifndef PXR_BOOST_PYTHON_OBJECT_MAKE_HOLDER_HPP
 #  define PXR_BOOST_PYTHON_OBJECT_MAKE_HOLDER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/make_holder.hpp>
-#else
-
 #  include "../detail/prefix.hpp"
 
 #  include "./instance.hpp"
@@ -71,5 +67,4 @@ using make_holder = make_holder_impl<std::make_index_sequence<N>>;
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_OBJECT_MAKE_HOLDER_HPP

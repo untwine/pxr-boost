@@ -16,10 +16,6 @@
 #ifndef PXR_BOOST_PYTHON_PTR_HPP
 # define PXR_BOOST_PYTHON_PTR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/ptr.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/mpl2/bool.hpp"
 
@@ -71,5 +67,4 @@ class unwrap_pointer<pointer_wrapper<T> >
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif

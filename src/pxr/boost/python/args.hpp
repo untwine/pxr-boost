@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_ARGS_HPP
 # define PXR_BOOST_PYTHON_ARGS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/args.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./args_fwd.hpp"
@@ -155,6 +151,4 @@ inline detail::keywords<sizeof...(Name)> args(Name... name)
 
 }}} // namespace pxr::boost::python
 
-
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif // PXR_BOOST_PYTHON_ARGS_HPP

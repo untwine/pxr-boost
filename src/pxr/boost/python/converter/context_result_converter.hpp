@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_CONTEXT_RESULT_CONVERTER_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_CONTEXT_RESULT_CONVERTER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/context_result_converter.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace converter {
 
 // A ResultConverter base class used to indicate that this result
@@ -25,5 +21,4 @@ struct context_result_converter {};
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_CONTEXT_RESULT_CONVERTER_HPP

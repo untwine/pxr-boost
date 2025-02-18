@@ -11,10 +11,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_INDIRECT_TRAITS_HPP
 # define PXR_BOOST_PYTHON_DETAIL_INDIRECT_TRAITS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/indirect_traits.hpp>
-#else
-
 #include <type_traits>
 
 namespace pxr { namespace boost { namespace python {
@@ -170,5 +166,4 @@ struct is_pointer_to_class
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_INDIRECT_TRAITS_HPP

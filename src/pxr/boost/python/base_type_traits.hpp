@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_BASE_TYPE_TRAITS_HPP
 # define PXR_BOOST_PYTHON_BASE_TYPE_TRAITS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/base_type_traits.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 namespace pxr { namespace boost { namespace python {
@@ -51,5 +47,4 @@ struct base_type_traits<PyMethodObject>
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_BASE_TYPE_TRAITS_HPP

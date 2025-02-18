@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_PROTOCOL_HPP
 # define PXR_BOOST_PYTHON_OBJECT_PROTOCOL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object_protocol.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./object_protocol_core.hpp"
@@ -88,5 +84,4 @@ void delslice(object const& target, Begin const& begin, End const& end)
 
 }}}} // namespace pxr::boost::python::api
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_PROTOCOL_HPP

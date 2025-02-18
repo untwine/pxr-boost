@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DEFAULT_CALL_POLICIES_HPP
 # define PXR_BOOST_PYTHON_DEFAULT_CALL_POLICIES_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/default_call_policies.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/mpl2/if.hpp"
 # include "./to_python_value.hpp"
@@ -97,5 +93,4 @@ struct default_result_converter::apply<PyObject*>
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DEFAULT_CALL_POLICIES_HPP

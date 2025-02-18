@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_STL_ITERATOR_CORE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_STL_ITERATOR_CORE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/stl_iterator_core.hpp>
-#else
-
 # include "../object_fwd.hpp"
 # include "../handle_fwd.hpp"
 
@@ -35,5 +31,4 @@ private:
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_STL_ITERATOR_CORE_HPP

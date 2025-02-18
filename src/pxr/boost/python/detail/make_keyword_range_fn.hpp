@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_MAKE_KEYWORD_RANGE_FN_HPP
 # define PXR_BOOST_PYTHON_DETAIL_MAKE_KEYWORD_RANGE_FN_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/make_keyword_range_fn.hpp>
-#else
-
 # include "../make_function.hpp"
 # include "../args_fwd.hpp"
 
@@ -80,5 +76,4 @@ object make_keyword_range_constructor(
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_MAKE_KEYWORD_RANGE_FN_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_HPP
 # define PXR_BOOST_PYTHON_OBJECT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object.hpp>
-#else
-
 # include "./ssize_t.hpp"
 # include "./object_core.hpp"
 # include "./object_attributes.hpp"
@@ -35,5 +31,4 @@ namespace pxr { namespace boost { namespace python {
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_HPP

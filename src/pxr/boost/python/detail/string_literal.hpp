@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_STRING_LITERAL_HPP
 # define PXR_BOOST_PYTHON_DETAIL_STRING_LITERAL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/string_literal.hpp>
-#else
-
 # include <cstddef>
 # include "../type.hpp"
 # include "./type_traits.hpp"
@@ -46,5 +42,4 @@ struct is_string_literal<T[n]>
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_STRING_LITERAL_HPP

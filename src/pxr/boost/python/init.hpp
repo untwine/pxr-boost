@@ -15,10 +15,6 @@
 #ifndef PXR_BOOST_PYTHON_INIT_HPP
 #define PXR_BOOST_PYTHON_INIT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/init.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 #include "./detail/type_list.hpp"
@@ -415,7 +411,7 @@ namespace detail
 }}} // namespace pxr::boost::python
 
 ///////////////////////////////////////////////////////////////////////////////
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
+
 #endif // PXR_BOOST_PYTHON_INIT_HPP
 
 

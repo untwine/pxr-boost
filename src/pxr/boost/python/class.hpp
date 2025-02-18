@@ -12,11 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CLASS_HPP
 # define PXR_BOOST_PYTHON_CLASS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include "./noncopyable.hpp"
-#include <boost/python/class.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./noncopyable.hpp"
@@ -569,5 +564,4 @@ inline class_<W,X1,X2,X3>::class_(char const* name, char const* doc, no_init_t)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CLASS_HPP

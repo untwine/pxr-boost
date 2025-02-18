@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_PYOBJECT_TYPE_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_PYOBJECT_TYPE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/pyobject_type.hpp>
-#else
-
 # include "../cast.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace converter {
@@ -48,5 +44,4 @@ struct pyobject_type
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_PYOBJECT_TYPE_HPP

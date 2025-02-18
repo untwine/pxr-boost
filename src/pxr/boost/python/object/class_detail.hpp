@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_CLASS_DETAIL_HPP
 # define PXR_BOOST_PYTHON_OBJECT_CLASS_DETAIL_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/class_detail.hpp>
-#else
-
 # include "../handle.hpp"
 # include "../type_id.hpp"
 
@@ -27,5 +23,4 @@ PXR_BOOST_PYTHON_DECL type_handle class_type();
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_CLASS_DETAIL_HPP

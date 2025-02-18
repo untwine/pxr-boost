@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_POINTEE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_POINTEE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/pointee.hpp>
-#else
-
 # include "./type_traits.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace detail {
@@ -43,5 +39,4 @@ struct pointee
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_POINTEE_HPP

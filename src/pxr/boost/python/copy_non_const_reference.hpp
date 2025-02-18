@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_COPY_NON_CONST_REFERENCE_HPP
 # define PXR_BOOST_PYTHON_COPY_NON_CONST_REFERENCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/copy_non_const_reference.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/indirect_traits.hpp"
 # include "./detail/mpl2/if.hpp"
@@ -51,5 +47,4 @@ struct copy_non_const_reference
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_COPY_NON_CONST_REFERENCE_HPP

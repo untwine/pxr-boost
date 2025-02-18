@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_ENUM_HPP
 # define PXR_BOOST_PYTHON_ENUM_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/enum.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./object/enum_base.hpp"
@@ -116,5 +112,4 @@ inline enum_<T>& enum_<T>::export_values()
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_ENUM_HPP

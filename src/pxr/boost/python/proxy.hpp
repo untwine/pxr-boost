@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_PROXY_HPP
 # define PXR_BOOST_PYTHON_PROXY_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/proxy.hpp>
-#else
 # include "./detail/prefix.hpp"
 # include "./object_core.hpp"
 # include "./object_operators.hpp"
@@ -105,5 +102,4 @@ inline void proxy<Policies>::del() const
 
 }}}} // namespace pxr::boost::python::api
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_PROXY_HPP

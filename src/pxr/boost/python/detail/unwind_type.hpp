@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_UNWIND_TYPE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_UNWIND_TYPE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/unwind_type.hpp>
-#else
-
 # include "./cv_category.hpp"
 # include "./indirect_traits.hpp"
 # include "./type_traits.hpp"
@@ -180,5 +176,4 @@ unwind_type(type<U>*p =0, Generator* =0)
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_UNWIND_TYPE_HPP

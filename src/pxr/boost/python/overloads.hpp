@@ -12,14 +12,9 @@
 #ifndef PXR_BOOST_PYTHON_OVERLOADS_HPP
 # define PXR_BOOST_PYTHON_OVERLOADS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/overloads.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./detail/overloads_fwd.hpp"
 # include "./detail/defaults_def.hpp"
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OVERLOADS_HPP

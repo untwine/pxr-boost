@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_DECREF_GUARD_HPP
 # define PXR_BOOST_PYTHON_DETAIL_DECREF_GUARD_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/decref_guard.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
 struct decref_guard
@@ -29,5 +25,4 @@ struct decref_guard
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_DECREF_GUARD_HPP

@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_FUNCTION_HANDLE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_FUNCTION_HANDLE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/function_handle.hpp>
-#else
 # include "../handle.hpp"
 # include "../detail/caller.hpp"
 # include "../default_call_policies.hpp"
@@ -52,5 +49,4 @@ handle<> make_function_handle(F f)
 
 }}}} // namespace pxr::boost::python::objects
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_FUNCTION_HANDLE_HPP

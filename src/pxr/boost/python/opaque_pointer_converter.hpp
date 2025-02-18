@@ -15,10 +15,6 @@
 # ifndef PXR_BOOST_PYTHON_OPAQUE_POINTER_CONVERTER_HPP
 # define PXR_BOOST_PYTHON_OPAQUE_POINTER_CONVERTER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/opaque_pointer_converter.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./lvalue_from_pytype.hpp"
 # include "./to_python_converter.hpp"
@@ -192,5 +188,4 @@ PyTypeObject opaque<Pointee>::type_object =
     }                                                                           \
     }}}
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 # endif    // PXR_BOOST_PYTHON_OPAQUE_POINTER_CONVERTER_HPP

@@ -11,11 +11,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_SFINAE_HPP
 # define PXR_BOOST_PYTHON_DETAIL_SFINAE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/sfinae.hpp>
-#else
-
 // Empty
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_SFINAE_HPP

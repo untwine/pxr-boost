@@ -11,10 +11,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_VALUE_ARG_HPP
 # define PXR_BOOST_PYTHON_DETAIL_VALUE_ARG_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/value_arg.hpp>
-#else
-
 # include "./copy_ctor_mutates_rhs.hpp"
 # include "./mpl2/if.hpp"
 # include "./indirect_traits.hpp"
@@ -34,5 +30,4 @@ struct value_arg
   
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_VALUE_ARG_HPP

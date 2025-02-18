@@ -11,10 +11,6 @@
 #ifndef PXR_BOOST_PYTHON_OVERRIDE_HPP
 # define PXR_BOOST_PYTHON_OVERRIDE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/override.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./converter/return_from_python.hpp"
@@ -107,5 +103,4 @@ class override : public object
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OVERRIDE_HPP

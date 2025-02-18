@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DATA_MEMBERS_HPP
 # define PXR_BOOST_PYTHON_DATA_MEMBERS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/data_members.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./handle.hpp"
@@ -303,5 +299,4 @@ inline object make_setter(D const& x)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DATA_MEMBERS_HPP

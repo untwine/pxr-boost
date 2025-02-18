@@ -15,10 +15,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_DEFAULTS_DEF_HPP
 #define PXR_BOOST_PYTHON_DETAIL_DEFAULTS_DEF_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/defaults_def.hpp>
-#else
-
 #include "./defaults_gen.hpp"
 #include "./type_traits.hpp"
 #include "./mpl2/front.hpp"
@@ -282,5 +278,4 @@ namespace detail
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_DEFAULTS_DEF_HPP

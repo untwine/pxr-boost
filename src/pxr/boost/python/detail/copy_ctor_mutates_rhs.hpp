@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_COPY_CTOR_MUTATES_RHS_HPP
 # define PXR_BOOST_PYTHON_DETAIL_COPY_CTOR_MUTATES_RHS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/copy_ctor_mutates_rhs.hpp>
-#else
-
 #include "./is_auto_ptr.hpp"
 
 namespace pxr { namespace boost { namespace python { namespace detail {
@@ -28,5 +24,4 @@ struct copy_ctor_mutates_rhs
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_COPY_CTOR_MUTATES_RHS_HPP

@@ -12,9 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_BUILTIN_CONVERTERS_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_BUILTIN_CONVERTERS_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/builtin_converters.hpp>
-#else
 # include "../detail/prefix.hpp"
 # include "../detail/none.hpp"
 # include "../handle.hpp"
@@ -197,5 +194,4 @@ namespace converter
 
 }}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_BUILTIN_CONVERTERS_HPP

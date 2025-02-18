@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_BORROWED_PTR_HPP
 # define PXR_BOOST_PYTHON_DETAIL_BORROWED_PTR_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/borrowed_ptr.hpp>
-#else
-
 # include "../type.hpp"
 # include "./mpl2/if.hpp"
 # include "./type_traits.hpp"
@@ -87,5 +83,4 @@ inline T* get_managed_object(detail::borrowed<T> const volatile* p, tag_t)
 
 }}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // #ifndef PXR_BOOST_PYTHON_DETAIL_BORROWED_PTR_HPP

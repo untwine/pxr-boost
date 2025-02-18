@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_CONVERTER_ARG_FROM_PYTHON_HPP
 # define PXR_BOOST_PYTHON_CONVERTER_ARG_FROM_PYTHON_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/converter/arg_from_python.hpp>
-#else
-
 # include "../detail/prefix.hpp"
 # include "./from_python.hpp"
 # include "../detail/indirect_traits.hpp"
@@ -343,5 +339,4 @@ back_reference_arg_from_python<T>::operator()()
 
 }}}} // namespace pxr::boost::python::converter
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_CONVERTER_ARG_FROM_PYTHON_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_DECORATED_TYPE_ID_HPP
 # define PXR_BOOST_PYTHON_DETAIL_DECORATED_TYPE_ID_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/decorated_type_id.hpp>
-#else
-
 # include "../type_id.hpp"
 # include "./indirect_traits.hpp"
 # include "./type_traits.hpp"
@@ -109,5 +105,4 @@ PXR_BOOST_PYTHON_DECL std::ostream& operator<<(std::ostream&, decorated_type_inf
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_DECORATED_TYPE_ID_HPP

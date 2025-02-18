@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_RETURN_INTERNAL_REFERENCE_HPP
 # define PXR_BOOST_PYTHON_RETURN_INTERNAL_REFERENCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/return_internal_reference.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 
 # include "./default_call_policies.hpp"
@@ -51,5 +47,4 @@ struct return_internal_reference
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_RETURN_INTERNAL_REFERENCE_HPP

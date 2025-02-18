@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_BORROWED_HPP
 # define PXR_BOOST_PYTHON_BORROWED_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/borrowed.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./detail/borrowed_ptr.hpp"
 
@@ -29,5 +25,4 @@ inline python::detail::borrowed<T>* borrowed(T* p)
     
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_BORROWED_HPP

@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_DEF_HELPER_HPP
 # define PXR_BOOST_PYTHON_DETAIL_DEF_HELPER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/def_helper.hpp>
-#else
-
 # include "../args.hpp"
 # include "./indirect_traits.hpp"
 # include "./type_traits.hpp"
@@ -193,5 +189,4 @@ namespace detail
 
 }}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_DEF_HELPER_HPP

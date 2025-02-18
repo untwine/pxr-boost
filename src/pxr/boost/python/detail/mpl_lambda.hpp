@@ -12,11 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_MPL_LAMBDA_HPP
 # define PXR_BOOST_PYTHON_DETAIL_MPL_LAMBDA_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/mpl_lambda.hpp>
-#else
-
 // Empty
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_MPL_LAMBDA_HPP

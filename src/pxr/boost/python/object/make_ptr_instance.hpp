@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_MAKE_PTR_INSTANCE_HPP
 # define PXR_BOOST_PYTHON_OBJECT_MAKE_PTR_INSTANCE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/make_ptr_instance.hpp>
-#else
-
 # include "./make_instance.hpp"
 # include "../converter/registry.hpp"
 # include "../detail/type_traits.hpp"
@@ -80,5 +76,4 @@ struct make_ptr_instance
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_OBJECT_MAKE_PTR_INSTANCE_HPP

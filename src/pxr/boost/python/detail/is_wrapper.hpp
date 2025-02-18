@@ -11,10 +11,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_IS_WRAPPER_HPP
 # define PXR_BOOST_PYTHON_DETAIL_IS_WRAPPER_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/is_wrapper.hpp>
-#else
-
 # include "./prefix.hpp"
 # include "./mpl2/bool.hpp"
 
@@ -37,5 +33,4 @@ namespace detail
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_IS_WRAPPER_HPP

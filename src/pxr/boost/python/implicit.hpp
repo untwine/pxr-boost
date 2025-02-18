@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_IMPLICIT_HPP
 # define PXR_BOOST_PYTHON_IMPLICIT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/implicit.hpp>
-#else
-
 # include "./detail/prefix.hpp"
 # include "./type.hpp"
 # include "./converter/implicit.hpp"
@@ -44,5 +40,4 @@ void implicitly_convertible(type<Source>* = 0, type<Target>* = 0)
 
 }}} // namespace pxr::boost::python
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_IMPLICIT_HPP

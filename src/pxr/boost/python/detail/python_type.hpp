@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_PYTHON_TYPE_HPP
 #define PXR_BOOST_PYTHON_DETAIL_PYTHON_TYPE_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/python_type.hpp>
-#else
-
 #include "../converter/registered.hpp"
 
 namespace pxr { namespace boost {namespace python {namespace detail{
@@ -45,5 +41,4 @@ template <class T> struct python_class : PyObject
 
 }}}} //namespace pxr::boost :: python :: detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif //PXR_BOOST_PYTHON_DETAIL_PYTHON_TYPE_HPP

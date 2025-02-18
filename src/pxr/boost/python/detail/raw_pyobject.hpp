@@ -12,10 +12,6 @@
 #ifndef PXR_BOOST_PYTHON_DETAIL_RAW_PYOBJECT_HPP
 # define PXR_BOOST_PYTHON_DETAIL_RAW_PYOBJECT_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/detail/raw_pyobject.hpp>
-#else
-
 namespace pxr { namespace boost { namespace python { namespace detail {
 
 //
@@ -40,5 +36,4 @@ typedef new_non_null_reference_t* new_non_null_reference;
 
 }}}} // namespace pxr::boost::python::detail
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif // PXR_BOOST_PYTHON_DETAIL_RAW_PYOBJECT_HPP

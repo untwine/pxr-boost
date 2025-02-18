@@ -13,10 +13,6 @@
 #ifndef PXR_BOOST_PYTHON_OBJECT_CLASS_METADATA_HPP
 #define PXR_BOOST_PYTHON_OBJECT_CLASS_METADATA_HPP
 
-#ifndef PXR_USE_INTERNAL_BOOST_PYTHON
-#include <boost/python/object/class_metadata.hpp>
-#else
-
 #include "../converter/shared_ptr_from_python.hpp"
 #include "./inheritance.hpp"
 #include "./class_wrapper.hpp"
@@ -97,9 +93,6 @@ template <class T, class Bases>
 inline void register_shared_ptr_from_python_and_casts(T*, Bases)
 {
   // Constructor performs registration
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-  python::detail::force_instantiate(converter::shared_ptr_from_python<T, boost::shared_ptr>());
-#endif
   python::detail::force_instantiate(converter::shared_ptr_from_python<T, std::shared_ptr>());
 
   //
@@ -307,5 +300,4 @@ struct class_metadata
 
 }}}} // namespace pxr::boost::python::object
 
-#endif // PXR_USE_INTERNAL_BOOST_PYTHON
 #endif
