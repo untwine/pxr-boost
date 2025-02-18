@@ -9,22 +9,9 @@
 
 #include "pxr/boost/python/common.hpp"
 
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-#include <boost/get_pointer.hpp>
-#include <boost/shared_ptr.hpp> // For get_pointer for boost::shared_ptr
-#else
 #include <memory>
-#endif
 
 namespace PXR_BOOST_NAMESPACE { namespace python { namespace detail {
-
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-using boost::get_pointer;
-#else
-
-// These are defined in boost/get_pointer.hpp and imported into this
-// namespace when PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR is defined.
-// Otherwise, we need to provide the implementations ourselves.
 
 template <class T>
 T* get_pointer(T* p)
@@ -43,8 +30,6 @@ T* get_pointer(std::shared_ptr<T> const& p)
 {
     return p.get();
 }
-
-#endif
 
 }}} // namespace PXR_BOOST_NAMESPACE::python::detail
 

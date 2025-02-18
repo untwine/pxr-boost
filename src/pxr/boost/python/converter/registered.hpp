@@ -26,17 +26,6 @@
 # include <iostream>
 #endif
 
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-namespace boost {
-
-// You'll see shared_ptr mentioned in this header because we need to
-// note which types are shared_ptrs in their registrations, to
-// implement special shared_ptr handling for rvalue conversions.
-template <class T> class shared_ptr;
-
-}
-#endif
-
 namespace PXR_BOOST_NAMESPACE {
 
 namespace python { namespace converter { 
@@ -79,15 +68,6 @@ namespace detail
   register_shared_ptr0(...)
   {
   }
-
-#ifdef PXR_BOOST_PYTHON_HAS_BOOST_SHARED_PTR
-  template <class T>
-  inline void
-  register_shared_ptr0(boost::shared_ptr<T>*)
-  {
-      registry::lookup_shared_ptr(type_id<boost::shared_ptr<T> >());
-  }
-#endif
 
   template <class T>
   inline void

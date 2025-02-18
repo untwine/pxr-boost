@@ -178,11 +178,7 @@ typedef int pid_t;
 # pragma warning(disable : 5033)  // 'register' is no longer a supported storage class
 #endif
 
-#if PY_MAJOR_VERSION == 2 && PY_MINOR_VERSION == 2 && PY_MICRO_VERSION < 2
-# include "pxr/boost/python/detail/python22_fixed.h"
-#else
 # include <Python.h>
-#endif
 
 #if PXR_BOOST_PYTHON_GCC_HAS_WREGISTER
 # pragma GCC diagnostic pop
