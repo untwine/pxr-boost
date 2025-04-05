@@ -28,6 +28,5 @@ cmake.args = [
     "-DBUILD_SHARED_LIBS=ON"
 ]
 wheel.py-api = "py3"
-wheel.platlib = false
 wheel.exclude = [".libs"]
 sdist.exclude = ["test", "doc", ".github"]
