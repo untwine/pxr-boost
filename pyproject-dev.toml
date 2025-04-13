@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "pxr-boost-dev"
-version = "0.25.2"
+version = "0.25.2.post5"
 description = "C++ headers and CMake config for developing with pxr-boost"
 readme = "README.md"
 requires-python = ">=3.8"
